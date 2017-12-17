@@ -53,6 +53,16 @@
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SeleniumDomainLogic\DomainLogic.csproj">
+      <Project>{91E644A4-F1AC-4973-AD54-8BDA1CDC01D1}</Project>
+      <Name>DomainLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SeleniumFramework\SeleniumFramework.csproj">
+      <Project>{61BA8472-2924-4629-B179-D1AECB8A6AC9}</Project>
+      <Name>SeleniumFramework</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>
